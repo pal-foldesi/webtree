@@ -1,0 +1,33 @@
+html, body {
+  /*vertical scrollbar appears at 100%*/
+  height: 99%;
+}
+
+#controls {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 170px 120px 80px;
+  grid-template-rows: repeat(8, 30px);
+  justify-items: baseline;
+  align-items: center;
+}
+
+#resetAllControls {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#copyToClipboard {
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+#saveAsImage {
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+#attribution {
+  position: absolute;
+  right: 20px;
+}
